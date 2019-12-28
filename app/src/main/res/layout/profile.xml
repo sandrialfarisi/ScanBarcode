@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/atas"
+        android:background="@drawable/rour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <ImageView
+            android:id="@+id/foto"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/namaProfile"
+            android:textColor="#FFFF"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:text="@string/nama"
+            android:layout_below="@id/foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:text="@string/NIM"
+            android:layout_below="@id/namaProfile"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="100px"
+            android:layout_height="wrap_content" />
+        
+    </RelativeLayout>
+
+
+
+
+
+<RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnAbsen"
+        android:layout_centerHorizontal="true"
+        android:text="Kamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMatkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            tools:listitem="@layout/matkul_item">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
+    
+
+</RelativeLayout>
